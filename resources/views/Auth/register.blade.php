@@ -11,6 +11,8 @@
             <input type="password" id="password" placeholder="Password" name="password" value="{{ old('password') }}" required>
             <input type="password" id="re-password" placeholder="repeat Password" name="password_confirmation" value="{{ old('password_confirmation') }}" required>
             <div class="error" id="passwordError">Password must be at least 6 characters</div>
+            <p>Login <span class="here"><a href="{{ route('auth.login') }}">
+                here</a></span></p>
             <button type="submit">Register</button>
         </form>
     </div>

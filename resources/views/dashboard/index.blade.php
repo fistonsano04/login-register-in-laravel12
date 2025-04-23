@@ -15,6 +15,7 @@
             transition: all 0.3s ease;
 
         }
+
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f9;
@@ -92,9 +93,14 @@
             content: "!";
             color: #007bff;
         }
-        .cards{
+
+        .cards {
             margin-top: 20px;
             width: 60em;
+        }
+        a{
+            color:white;
+            text-decoration:none;
         }
     </style>
 </head>
@@ -105,7 +111,7 @@
             <li><i class="fas fa-home"></i> Home</li>
             <li><i class="fas fa-user"></i> Profile</li>
             <li><i class="fas fa-cog"></i> Settings</li>
-            <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+            <li><a href="{{ route('auth.logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
     </div>
     <div class="dashboard container">

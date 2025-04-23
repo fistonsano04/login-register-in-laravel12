@@ -12,6 +12,7 @@ Route::prefix('/')->controller('AuthController')->group(function () {
     Route::post('login/auth', [AuthController::class, 'LoginAuth'])->name('login.authenticate');
     Route::post('login', [AuthController::class, 'processLogin'])->name('auth.processLogin');
     Route::post('register', [AuthController::class, 'processRegister'])->name('auth.processRegister');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 });
 
 
