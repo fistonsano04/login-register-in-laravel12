@@ -8,9 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+
+        }
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f9;
+            overflow-x: hidden;
         }
 
         .dashboard {
@@ -60,7 +68,7 @@
             padding: 20px;
             text-align: center;
             width: 50em;
-            
+
         }
 
         .profile-card img {
@@ -84,13 +92,14 @@
             content: "!";
             color: #007bff;
         }
+        .cards{
+            margin-top: 20px;
+            width: 60em;
+        }
     </style>
 </head>
 
 <body>
-    {{-- <button class="menu-toggle">
-        <i class="fas fa-bars"></i>
-    </button> --}}
     <div class="menu-panel">
         <ul>
             <li><i class="fas fa-home"></i> Home</li>
@@ -114,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row cards">
             <div class="col-md-4">
                 <div class="card p-3">
                     <h5 class="card-title">Card 1</h5>
